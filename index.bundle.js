@@ -1,4 +1,4 @@
-/******/ (() => { // webpackBootstrap
+F/******/ (() => { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
 /***/ "./node_modules/@emotion/is-prop-valid/dist/emotion-is-prop-valid.esm.js"
@@ -195317,7 +195317,7 @@ const targets = [];
 let score = 0;
 const scoreText = new troika_three_text__WEBPACK_IMPORTED_MODULE_2__.Text();
 scoreText.fontSize = 0.52;
-scoreText.font = 'assets/SpaceMono-Bold.ttf';
+scoreText.font = './assets/SpaceMono-Bold.ttf';
 scoreText.position.z = -2;
 scoreText.color = 0xffa276;
 scoreText.anchorX = 'center';
@@ -195335,15 +195335,15 @@ function updateScoreDisplay() {
 function setupScene({ scene, camera, renderer, player, controllers }) {
 	const gltfLoader = new three_addons_loaders_GLTFLoader_js__WEBPACK_IMPORTED_MODULE_1__.GLTFLoader();
 
-	gltfLoader.load('assets/spacestation.glb', (gltf) => {
+	gltfLoader.load('./assets/spacestation.glb', (gltf) => {
 		scene.add(gltf.scene);
 	});
 
-	gltfLoader.load('assets/blaster.glb', (gltf) => {
+	gltfLoader.load('./assets/blaster.glb', (gltf) => {
 		blasterGroup.add(gltf.scene);
 	});
 
-	gltfLoader.load('assets/target.glb', (gltf) => {
+	gltfLoader.load('./assets/target.glb', (gltf) => {
 		for (let i = 0; i < 3; i++) {
 			const target = gltf.scene.clone();
 			target.position.set(
