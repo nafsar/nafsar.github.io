@@ -1,4 +1,4 @@
-F/******/ (() => { // webpackBootstrap
+/******/ (() => { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
 /***/ "./node_modules/@emotion/is-prop-valid/dist/emotion-is-prop-valid.esm.js"
@@ -195367,13 +195367,13 @@ function setupScene({ scene, camera, renderer, player, controllers }) {
 
 	const audioLoader = new three__WEBPACK_IMPORTED_MODULE_0__.AudioLoader();
 	laserSound = new three__WEBPACK_IMPORTED_MODULE_0__.PositionalAudio(listener);
-	audioLoader.load('assets/laser.ogg', (buffer) => {
+	audioLoader.load('./assets/laser.ogg', (buffer) => {
 		laserSound.setBuffer(buffer);
 		blasterGroup.add(laserSound);
 	});
 
 	scoreSound = new three__WEBPACK_IMPORTED_MODULE_0__.PositionalAudio(listener);
-	audioLoader.load('assets/score.ogg', (buffer) => {
+	audioLoader.load('./assets/score.ogg', (buffer) => {
 		scoreSound.setBuffer(buffer);
 		scoreText.add(scoreSound);
 	});
